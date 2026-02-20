@@ -277,6 +277,7 @@ WITH
             current_assets / NULLIF(current_liabilities, 0) AS current_ratio,
             current_assets - current_liabilities AS working_capital,
             inventory / NULLIF(current_assets, 0) AS inventory_to_current_assets,
+            total_assets as total_assets,
             /* ---------- Leverage & Capital Structure ---------- */
             long_term_debt AS long_term_debt,
             total_debt AS total_debt,
@@ -308,6 +309,7 @@ WITH
             net_income / NULLIF(total_revenue, 0) AS net_margin,
             net_income AS net_income,
             /* ---------- Growth ---------- */
+            total_revenue AS revenue,
             revenue_cagr_4y AS revenue_cagr_4y,
             rent_growth_rate AS rent_growth_rate,
             /* ---------- Stability & Volatility ---------- */
@@ -408,6 +410,15 @@ SELECT
     fiscal_year,
     'inventory_to_current_assets',
     inventory_to_current_assets
+FROM
+    base
+UNION ALL
+SELECT
+    symbol,
+    sector,
+    fiscal_year,
+    'total_assets',
+    total_assets
 FROM
     base
 UNION ALL
@@ -633,6 +644,15 @@ SELECT
     fiscal_year,
     'net_income',
     net_income
+FROM
+    base
+UNION ALL
+SELECT
+    symbol,
+    sector,
+    fiscal_year,
+    'revenue',
+    revenue
 FROM
     base
 UNION ALL
