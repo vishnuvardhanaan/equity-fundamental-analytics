@@ -557,11 +557,26 @@ equity-fundamental-analytics
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ HOW TO RUN
 
 Follow the steps below to execute the full **Bronze → Silver → Gold → Power BI** pipeline.
 
 ---
+
+### ⚡ Initialization
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/vishnuvardhanaan/equity-fundamental-analytics.git
+cd equity-fundamental-analytics
+```
+
+#### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 🥈 Step 1 — Silver Layer Processing
 
