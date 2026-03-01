@@ -74,7 +74,7 @@ Retail investors often depend on fragmented financial data without a consistent,
 
 ---
 
-## SYSTEM ARCHITECTURE
+## 🧱 SYSTEM ARCHITECTURE
 
 ![alt text](EIS_Architecture.png)
 
