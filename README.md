@@ -354,13 +354,13 @@ The dashboard is published to **Power BI Service** for public accessibility, sim
 
 <img src="screenshots/Company%20Snapshot%20Page%202.png" width="800"/>
 
-### Financial Health Overall
+### Financial Health
 
 <img src="screenshots/Financial%20Health%20Overall%20Page%203.png" width="800"/><br>
 
 <img src="screenshots/Financial%20Health%20Individual%20Page%203.png" width="800"/>
 
-### Profitability & Growth Overall
+### Profitability & Growth
 
 <img src="screenshots/Profitability%20%26%20Growth%20Overall%20Page%204.png" width="800"/><br>
 
@@ -370,7 +370,7 @@ The dashboard is published to **Power BI Service** for public accessibility, sim
 
 <img src="screenshots/Cashflow%20%26%20Capital%20Allocation%20Page%205.png" width="800"/>
 
-### Stability & Risk Overall
+### Stability & Risk
 
 <img src="screenshots/Stability%20%26%20Risk%20Overall%20Page%206.png" width="800"/><br>
 
