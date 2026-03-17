@@ -32,7 +32,7 @@
 
 <div align="justify">
 
-## 🚀 OVERVIEW
+## OVERVIEW
 
 **Equity Intelligence System** is an end-to-end analytics engineering project that standardizes, transforms, scores, and visualizes NSE-listed companies using a production-style **Bronze → Silver → Gold** data architecture.
 
@@ -48,23 +48,23 @@ This system is designed to help investors and analysts **identify fundamentally 
 
 ---
 
-## 🎯 PROJECT PURPOSE
+## PROJECT PURPOSE
 
 Retail investors often depend on fragmented financial data without a consistent, structured evaluation framework.  
 **Equity Intelligence System** bridges this gap by transforming raw financial information into a disciplined, explainable analytics workflow.
 
-### 🧩 How This System Creates Value
+### How This System Creates Value
 
-- 🗄️ **Standardizes** raw financial datasets into a normalized analytical structure
-- ⚙️ **Engineers** derived financial metrics using advanced SQL transformations
-- 📐 **Implements** a transparent, multi-dimensional scoring framework
-- 🌐 **Adapts** evaluation logic based on macroeconomic phase
-- 🔍 **Provides** explainable analytics through structured SQL views
-- 📊 **Delivers** a production-grade Power BI intelligence dashboard
+- **Standardizes** raw financial datasets into a normalized analytical structure
+- **Engineers** derived financial metrics using advanced SQL transformations
+- **Implements** a transparent, multi-dimensional scoring framework
+- **Adapts** evaluation logic based on macroeconomic phase
+- **Provides** explainable analytics through structured SQL views
+- **Delivers** a production-grade Power BI intelligence dashboard
 
 ---
 
-> ⚠️ **Philosophy**  
+> **Philosophy**  
 > This project does **not** provide stock tips.
 >
 > ✅ The mission is to enable **structured financial intelligence**,  
@@ -74,19 +74,19 @@ Retail investors often depend on fragmented financial data without a consistent,
 
 ---
 
-## 🧱 SYSTEM ARCHITECTURE
+## SYSTEM ARCHITECTURE
 
 ![alt text](EIS_Architecture.png)
 
 ---
 
-## 🏗️ DATA ARCHIECTURE
+## DATA ARCHIECTURE
 
 The **Equity Intelligence System** follows a production-style **Bronze → Silver → Gold** medallion architecture, ensuring data reliability, analytical readiness, and explainable intelligence at scale.
 
 ---
 
-### 🥉 Bronze Layer — Raw Standardized Data
+### Bronze Layer — Raw Standardized Data
 
 **Database:** `nse_equity_universe_bronze.db`  
 **Source Project:** Equity Depot (equity-fundamental-engine)
@@ -95,17 +95,17 @@ This foundational layer stores standardized raw financial data with minimal tran
 
 **Key Characteristics**
 
-- 📄 Standardized financial statements
-- 🏢 Company static information
-- 📈 Market data
-- 🧱 Structured but not analytics-ready tables
-- 🛡️ Preserves raw financial integrity
+- Standardized financial statements
+- Company static information
+- Market data
+- Structured but not analytics-ready tables
+- Preserves raw financial integrity
 
-> 💡 Purpose: Maintain a clean, trusted source of truth.
+> Purpose: Maintain a clean, trusted source of truth.
 
 ---
 
-### 🥈 Silver Layer — Cleaned & Analytics-Ready
+### Silver Layer — Cleaned & Analytics-Ready
 
 **Database:** `nse_equity_universe_silver.db`
 
@@ -113,27 +113,27 @@ The Silver layer transforms raw data into an analytics-ready model through syste
 
 **Transformations Performed**
 
-- 🎯 Equity segment filtering
-- 🧹 Column selection for analytics relevance
-- 🔧 Missing value handling
-- 🔄 Data normalization
-- 📐 Financial statement pivot (long → wide)
-- ⚙️ Comprehensive data cleaning & transformation
+- Equity segment filtering
+- Column selection for analytics relevance
+- Missing value handling
+- Data normalization
+- Financial statement pivot (long → wide)
+- Comprehensive data cleaning & transformation
 
 **Automation**
 
 All transformations are orchestrated via a **Tkinter-based execution app**.
 
-🖱️ Clicking the **“Clean”** button:
+Clicking the **“Clean”** button:
 
 - Executes the full transformation pipeline
 - Generates the Silver database automatically
 
-> 💡 Purpose: Simulate an automated, production-style data transformation workflow.
+> Purpose: Simulate an automated, production-style data transformation workflow.
 
 ---
 
-### 🥇 Gold Layer — Metrics, Scoring & Explainability
+### Gold Layer — Metrics, Scoring & Explainability
 
 **Database:** `nse_equity_universe_gold.db`
 
@@ -141,70 +141,70 @@ The Gold layer serves as the **core analytics engine**, where financial intellig
 
 **Implemented Using**
 
-- 🧠 SQL CTEs
-- 🪟 Window Functions
-- 🏗️ Multi-stage metric computation
-- 📥 Insert pipelines into structured Gold tables
+- SQL CTEs
+- Window Functions
+- Multi-stage metric computation
+- Insert pipelines into structured Gold tables
 
 **Computations Include**
 
-- 📊 Base financial metrics
-- 📉 Derived financial ratios
-- 🎯 Multi-dimensional scoring logic
-- 🚀 Performance views
-- 🔍 Explanation views
+- Base financial metrics
+- Derived financial ratios
+- Multi-dimensional scoring logic
+- Performance views
+- Explanation views
 
 **Execution Workflow**
 
 All computations are triggered through a second **Tkinter orchestration app** featuring:
 
-- 🌐 Macroeconomic phase selection
-- ▶️ One-click execution pipeline
+- Macroeconomic phase selection
+- One-click execution pipeline
 
-> 💡 Purpose: Deliver explainable, macro-aware financial intelligence.
+> Purpose: Deliver explainable, macro-aware financial intelligence.
 
 ---
 
-## 🌍 MACRO PHASE ENGINE
+## MACRO PHASE ENGINE
 
 The Gold layer integrates a **macroeconomic regime selector**, introducing scenario-aware intelligence into the scoring framework.
 
-### 📈 Supported Macro Phases
+### Supported Macro Phases
 
-- 🔄 Recovery
-- 🚀 Expansion
-- ⚖️ Peak
-- 📉 Recession
+- Recovery
+- Expansion
+- Peak
+- Recession
 
 Each macro phase dynamically influences:
 
-- 🎯 Scoring logic
-- 📊 Metric weighting emphasis
-- 📐 Evaluation priorities
+- Scoring logic
+- Metric weighting emphasis
+- Evaluation priorities
 
 Rather than applying static financial rules, the system adapts its analytical lens based on the broader economic context.
 
 ---
 
-### ⚙️ Execution Workflow
+### Execution Workflow
 
 The macro-aware engine is controlled via a dedicated **Tkinter orchestration app**:
 
-1. 🌐 Select macro phase
-2. ▶️ Click **Run**
-3. 🧠 Analytics engine recalculates metrics & scores
-4. 💾 Updated results are written into the Gold database
+1. Select macro phase
+2. Click **Run**
+3. Analytics engine recalculates metrics & scores
+4. Updated results are written into the Gold database
 
 ---
 
-> 💡 Why This Matters
+> Why This Matters
 >
 > Most portfolio projects apply fixed evaluation rules.  
 > This system introduces **regime-dependent intelligence**, reflecting how real-world investment strategies adapt across economic cycles.
 
 ---
 
-## 🧩 ENTITY RELATIONSHIP DIAGRAM
+## ENTITY RELATIONSHIP DIAGRAM
 
 The diagram below illustrates the layered architecture and entity relationships across the **Bronze**, **Silver**, and **Gold** data layers.
 
@@ -214,7 +214,7 @@ It reflects how raw API data is progressively structured, normalized, and prepar
 <img src="screenshots/ER%20Diagram.png" width="800"/>
 </div>
 
-### 🔎 Layer Overview
+### Layer Overview
 
 - **Bronze Layer** — Raw ingestion from NSE and Yahoo Finance APIs
 - **Silver Layer** — Cleaned and standardized financial datasets
@@ -229,7 +229,7 @@ This layered architecture ensures:
 
 ---
 
-## 📈 SCORING FRAMEWORK
+## SCORING FRAMEWORK
 
 The **Equity Intelligence System** evaluates companies using a transparent, rule-based framework across three analytical dimensions.  
 This multi-axis approach reduces single-metric bias and improves the robustness of fundamental assessment.
@@ -249,7 +249,7 @@ Evaluates metrics against predefined benchmark thresholds.
 
 Debt-to-Equity < 1 → Positive Score
 
-> 💡 Purpose: Identify companies meeting fundamental financial hygiene standards.
+> Purpose: Identify companies meeting fundamental financial hygiene standards.
 
 ---
 
@@ -266,7 +266,7 @@ Compares related metrics within the same company to assess internal financial dy
 
 Revenue Growth > Expense Growth → Positive Signal
 
-> 💡 Purpose: Capture business quality beyond static ratio thresholds.
+> Purpose: Capture business quality beyond static ratio thresholds.
 
 ---
 
@@ -284,42 +284,42 @@ Tracks multi-year directional improvement in key financial indicators.
 
 Current Ratio improving over last 4 years → Positive Trend Score
 
-> 💡 Purpose: Identify companies demonstrating consistent financial strengthening.
+> Purpose: Identify companies demonstrating consistent financial strengthening.
 
 ---
 
-## 🧠 DESIGN PHILOSOPHY
+## DESIGN PHILOSOPHY
 
 The scoring model is intentionally **transparent and explainable**, avoiding opaque black-box methods.
 
 **Key Principles**
 
-- 🔍 Rule-based and auditable
-- 📊 Multi-dimensional evaluation
-- 🧩 Explainability-first design
-- ⚖️ Balanced between quality, efficiency, and momentum
+- Rule-based and auditable
+- Multi-dimensional evaluation
+- Explainability-first design
+- Balanced between quality, efficiency, and momentum
 
-> 🚫 Not a prediction engine  
-> ✅ A structured financial intelligence framework  
-> 💡 Outcome: Users gain **trustworthy, interpretable financial intelligence** instead of unexplained rankings.
+> Not a prediction engine  
+> A structured financial intelligence framework  
+> Outcome: Users gain **trustworthy, interpretable financial intelligence** instead of unexplained rankings.
 
 ---
 
-## 📊 POWER BI ANALYTICS LAYER
+## POWER BI ANALYTICS LAYER
 
 The **Gold database** serves as the semantic source for the Power BI reporting layer, where financial intelligence is transformed into interactive business insights.
 
-### 🧮 Semantic & Analytical Modeling
+### Semantic & Analytical Modeling
 
 Within Power BI:
 
-- ⚙️ Advanced **DAX measures** are implemented
-- 📐 KPIs and derived indicators are computed
-- 🧠 Semantic logic enhances analytical usability
+- Advanced **DAX measures** are implemented
+- KPIs and derived indicators are computed
+- Semantic logic enhances analytical usability
 
 ---
 
-### 📑 Dashboard Experience
+### Dashboard Experience
 
 A comprehensive **9-page interactive dashboard** is built to support exploratory and decision-driven analysis.
 
@@ -329,20 +329,20 @@ Overview → Performance → Valuation → Remarks
 
 The report enables users to:
 
-- 🔍 Explore company fundamentals
-- 📊 Compare financial strength
-- 🎯 Identify high-quality businesses
-- 💡 Understand scoring drivers through explainability views
+- Explore company fundamentals
+- Compare financial strength
+- Identify high-quality businesses
+- Understand scoring drivers through explainability views
 
 ---
 
-### ☁️ Deployment
+### Deployment
 
 The dashboard is published to **Power BI Service** for public accessibility, simulating an enterprise-grade analytics delivery workflow.
 
 ---
 
-## 📸 DASHBOARD PREVIEW
+## DASHBOARD PREVIEW
 
 <div align="center">
 
@@ -392,81 +392,81 @@ The dashboard is published to **Power BI Service** for public accessibility, sim
 
 ---
 
-## 🔄 End-to-End Analytics Lifecycle
+## End-to-End Analytics Lifecycle
 
 This project demonstrates full ownership of the modern data pipeline:
 
 Data Engineering → Analytics Engineering → Business Intelligence → Deployment
 
-> 💡 Outcome: A production-style equity intelligence platform that transforms raw financial data into actionable, explainable insights.
+> Outcome: A production-style equity intelligence platform that transforms raw financial data into actionable, explainable insights.
 
 ---
 
-## 🚀 KEY FEATURES
+## KEY FEATURES
 
-✨ **End-to-End Medallion Architecture**  
+**End-to-End Medallion Architecture**  
 Production-style **Bronze → Silver → Gold** pipeline ensuring data reliability and analytical readiness.
 
-⚙️ **Automated Tkinter Execution Pipeline**  
+**Automated Tkinter Execution Pipeline**  
 One-click orchestration for data transformation and analytics computation.
 
-🧠 **SQL-Based Financial Metric Engine**  
+**SQL-Based Financial Metric Engine**  
 Advanced computations implemented using **CTEs** and **Window Functions** for scalable metric generation.
 
-📊 **Multi-Dimensional Scoring Framework**  
+**Multi-Dimensional Scoring Framework**  
 Companies evaluated across:
 
 - Absolute scoring
 - Relative scoring
 - Trend scoring
 
-🌍 **Macro-Aware Evaluation Logic**  
+**Macro-Aware Evaluation Logic**  
 Dynamic scoring behavior that adapts to economic regimes (Recovery, Expansion, Peak, Recession).
 
-🔍 **Explainable Analytics Layer**  
+**Explainable Analytics Layer**  
 Structured SQL views provide full transparency into metric calculations and scoring drivers.
 
-📑 **Power BI Interactive Dashboard**  
+**Power BI Interactive Dashboard**  
 Comprehensive multi-page report enabling deep fundamental exploration.
 
-☁️ **Published Analytics Delivery**  
+**Published Analytics Delivery**  
 Dashboard deployed to **Power BI Service**, simulating enterprise BI distribution.
 
-🎯 **Retail-Friendly Financial Intelligence**  
+**Retail-Friendly Financial Intelligence**  
 Designed to help everyday investors systematically identify fundamentally strong companies.
 
 ---
 
 ## 🛠️ TECH STACK
 
-### 🧩 Programming & Data
+### Programming & Data
 
-- 🐍 **Python** — orchestration, data processing, and automation
-- 🗄️ **SQLite** — lightweight analytical data warehouse
-- 🧠 **SQL** — advanced transformations using:
+- **Python** — orchestration, data processing, and automation
+- **SQLite** — lightweight analytical data warehouse
+- **SQL** — advanced transformations using:
   - CTEs
   - Window Functions
   - Analytical Views
   - Insert Pipelines
 
-### 📊 Analytics & Visualization
+### Analytics & Visualization
 
-- 📑 **Power BI** — interactive analytics and reporting layer
-- ⚙️ **DAX** — KPI logic and semantic calculations
+- **Power BI** — interactive analytics and reporting layer
+- **DAX** — KPI logic and semantic calculations
 
-### 🖥️ Application Layer
+### Application Layer
 
-- 🎛️ **Tkinter** — process automation UI for one-click pipeline execution
+- **Tkinter** — process automation UI for one-click pipeline execution
 
-### 🏗️ Architecture & Design
+### Architecture & Design
 
-- 🥉🥈🥇 **Layered Data Architecture (Bronze → Silver → Gold)**
-- 🔄 **Analytics Engineering Pipeline** with automated orchestration
-- 🔍 **Explainability-First Design Philosophy**
+- **Layered Data Architecture (Bronze → Silver → Gold)**
+- **Analytics Engineering Pipeline** with automated orchestration
+- **Explainability-First Design Philosophy**
 
 ---
 
-## 📦 REPOSITORY STRUCTURE
+## 📂 REPOSITORY STRUCTURE
 
 ```text
 equity-fundamental-analytics
@@ -563,7 +563,7 @@ Follow the steps below to execute the full **Bronze → Silver → Gold → Powe
 
 ---
 
-### ⚡ Initialization
+### Initialization
 
 #### 1. Clone the Repository
 
@@ -578,7 +578,7 @@ cd equity-fundamental-analytics
 pip install -r requirements.txt
 ```
 
-### 🥈 Step 1 — Silver Layer Processing
+### Step 1 — Silver Layer Processing
 
 **Prerequisites**
 
@@ -601,13 +601,13 @@ id="run-silver-cmd"
 2. Click **Clean**
 3. Pipeline executes automatically
 
-✅ Output generated:
+**Output generated:**
 
 data/silver/nse_equity_universe_silver.db
 
 ---
 
-### 🥇 Step 2 — Gold Layer Analytics Engine
+### Step 2 — Gold Layer Analytics Engine
 
 **Prerequisites**
 
@@ -629,13 +629,13 @@ id="run-gold-cmd"
 2. Click **Run**
 3. Metrics and scoring engine executes
 
-✅ Output generated:
+**Output generated:**
 
 data/gold/nse_equity_universe_gold.db
 
 ---
 
-### 📊 Step 3 — Power BI Dashboard
+### Step 3 — Power BI Dashboard
 
 **Open**
 
@@ -661,62 +661,62 @@ data/powerbi/Equity_Intelligence_System_Dashboard.pbix
 
 ---
 
-## 🧠 EXPECTED OUTCOME
+## EXPECTED OUTCOME
 
 After successful execution, you will have:
 
-- 🥉 Standardized raw data (Bronze — external dependency)
-- 🥈 Clean analytics-ready model (Silver)
-- 🥇 Scored and explainable intelligence layer (Gold)
-- 📊 Interactive Power BI decision-support dashboard
+- Standardized raw data (Bronze — external dependency)
+- Clean analytics-ready model (Silver)
+- Scored and explainable intelligence layer (Gold)
+- Interactive Power BI decision-support dashboard
 
-> 💡 The pipeline is designed to simulate a production-style analytics workflow with one-click orchestration.
+> The pipeline is designed to simulate a production-style analytics workflow with one-click orchestration.
 
 ---
 
-## 🔍 EXPLAINABILITY DESIGN
+## EXPLAINABILITY DESIGN
 
 Transparency is a foundational principle of the **Equity Intelligence System**.  
 The platform is intentionally built to ensure every score can be traced, audited, and understood.
 
 ---
 
-### 🧩 Explainability Architecture
+### Explainability Architecture
 
 Two structured SQL view categories power the interpretability layer:
 
-- 📊 **Performance Views** → expose computed financial metrics
-- 🔎 **Explanation Views** → reveal scoring logic and rule outcomes
+- **Performance Views** → expose computed financial metrics
+- **Explanation Views** → reveal scoring logic and rule outcomes
 
 This dual-view design separates **what the numbers are** from **why the system judged them**, enabling clean analytical storytelling.
 
 ---
 
-### 🎯 What Users Can Understand
+### What Users Can Understand
 
 The explainability layer enables users to clearly see:
 
-- ✅ Why a company scored high or low
-- 📐 Which metrics contributed to the score
-- 🌍 How the selected macro phase influenced evaluation
+- Why a company scored high or low
+- Which metrics contributed to the score
+- How the selected macro phase influenced evaluation
 
 ---
 
-## 📈 PROJECT IMPACT
+## PROJECT IMPACT
 
 This project demonstrates practical capability across the full analytics stack:
 
-- 🏗️ **Data Engineering** — layered architecture, transformation pipelines, logging
-- 🧠 **Analytics Engineering** — semantic modeling and metric computation
-- 🧮 **Advanced SQL Proficiency** — CTEs, window functions, views, insert pipelines
-- 📊 **Financial Metrics Expertise** — ratio analysis, trend evaluation, valuation logic
-- 🎯 **Rule-Based Scoring System Design** — multi-dimensional evaluation framework
-- 🌍 **Scenario-Based Macro Logic** — regime-aware scoring adjustments
-- 📑 **Business Intelligence Development** — multi-page Power BI dashboard
-- ☁️ **Deployment Experience** — published analytics layer (Power BI Service)
-- 🔄 **End-to-End Project Ownership** — from raw data to production-style delivery
+- **Data Engineering** — layered architecture, transformation pipelines, logging
+- **Analytics Engineering** — semantic modeling and metric computation
+- **Advanced SQL Proficiency** — CTEs, window functions, views, insert pipelines
+- **Financial Metrics Expertise** — ratio analysis, trend evaluation, valuation logic
+- **Rule-Based Scoring System Design** — multi-dimensional evaluation framework
+- **Scenario-Based Macro Logic** — regime-aware scoring adjustments
+- **Business Intelligence Development** — multi-page Power BI dashboard
+- **Deployment Experience** — published analytics layer (Power BI Service)
+- **End-to-End Project Ownership** — from raw data to production-style delivery
 
-🔎 Role Alignment
+Role Alignment
 
 - Data Analyst
 - Analytics Engineer
@@ -726,16 +726,16 @@ This project demonstrates practical capability across the full analytics stack:
 
 ---
 
-## 🔮 FUTURE ENHANCEMENTS
+## FUTURE ENHANCEMENTS
 
 The system is designed for extensibility. Potential next-phase upgrades include:
 
-- 🔄 Automated API-based data ingestion
-- 📊 Sector-relative scoring adjustments
-- ⚠️ Risk modeling integration
-- 📈 Factor-based investing model expansion
-- ☁️ Cloud migration (Azure / AWS RDS)
-- ⏱️ Scheduled pipeline orchestration
+- Automated API-based data ingestion
+- Sector-relative scoring adjustments
+- Risk modeling integration
+- Factor-based investing model expansion
+- Cloud migration (Azure / AWS RDS)
+- Scheduled pipeline orchestration
 
 ---
 
