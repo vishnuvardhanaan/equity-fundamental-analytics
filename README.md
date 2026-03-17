@@ -38,11 +38,11 @@
 
 The platform simulates a real-world financial analytics pipeline where raw financial data is systematically:
 
-- 🧹 Cleaned and standardized
-- 🔄 Transformed into analytics-ready models
-- 📐 Enriched with advanced financial metrics
-- 🎯 Scored across multiple analytical dimensions
-- 📊 Delivered through an interactive Power BI decision-support dashboard
+- Cleaned and standardized
+- Transformed into analytics-ready models
+- Enriched with advanced financial metrics
+- Scored across multiple analytical dimensions
+- Delivered through an interactive Power BI decision-support dashboard
 
 This system is designed to help investors and analysts **identify fundamentally strong and potentially undervalued companies** through a transparent, explainable scoring framework.
 
